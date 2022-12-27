@@ -1,0 +1,24 @@
+server:
+  servlet:
+    encoding:
+      force-response: true
+  port: 8080
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jpa:
+    show-sql: true
+    database-platform:
+    database:
+    hibernate.ddl-auto: update
+    open-in-view: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/likelion-db
+    username: root
+    password: root
+
+jwt:
+  token:
+    secret: hello
